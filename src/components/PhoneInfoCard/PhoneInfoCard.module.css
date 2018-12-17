@@ -19,3 +19,7 @@
     flex-direction: column;
     margin: 10px;
 }
+
+img {
+    max-width: 90%;
+}

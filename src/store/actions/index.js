@@ -1,0 +1,1 @@
+export { fetchPhones } from './phones';
