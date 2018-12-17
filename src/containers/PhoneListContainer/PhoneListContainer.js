@@ -4,21 +4,25 @@ import * as actions from '../../store/actions/index';
 
 import PhoneInfoCard from '../../components/PhoneInfoCard/PhoneInfoCard';
 import classes from './PhoneListContainer.module.css';
+import Spinner from '../../components/UI/Spinner/Spinner';
 
 class PhoneListContainer extends Component {
 
-    componentDidMount () {
+    componentDidMount() {
         this.props.onFetchPhones();
     }
 
     render() {
-        let data = this.props.phones.map(details => <PhoneInfoCard  key={details.id} 
-                                                                    name={details.Brand}
-                                                                    image={details.img}
-                                                                    model={details.DeviceName}></PhoneInfoCard>)
+        let phonesCards = <Spinner />
+        if (!this.props.loading) {
+            phonesCards = this.props.phones.map(details => <PhoneInfoCard key={details.id}
+                brand={details.Brand}
+                image={details.img}
+                model={details.model}></PhoneInfoCard>)
+        }
         return (
             <div className={classes.Items}>
-                {data}
+                {phonesCards}
             </div>
         );
 
