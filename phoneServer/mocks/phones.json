@@ -1,0 +1,55 @@
+[
+    {
+        
+            "DeviceName": "Apple iPhone XR",
+            "Brand": "Apple",
+            "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+            "dimensions": "150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)",
+            "weight": "194 g (6.84 oz)",
+            "type": "IPS LCD capacitive touchscreen, 16M colors",
+            "size": "6.1 inches, 90.3 cm2 (~79.0% screen-to-body ratio)",
+            "resolution": "828 x 1792 pixels, 19.5:9 ratio (~326 ppi density)",
+            "price": "850€",
+            "img": "https://www.vodafone.es/img/dynamique/LARGE/5332a3833ada4f6495a2e632e2d226cc_275x385.png"
+        },
+        {
+            "DeviceName": "Apple iPhone 8",
+            "Brand": "Apple",
+            "technology": "GSM / HSPA / LTE",
+            "dimensions": "138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)",
+            "weight": "148 g (5.22 oz)",
+            "type": "LED-backlit IPS LCD, capacitive touchscreen, 16M colors",
+            "size": "4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)",
+            "resolution": "750 x 1334 pixels, 16:9 ratio (~326 ppi density)",
+            "colors": "Silver, Space Gray, Gold",
+            "price": "700€",
+            "img": "https://www.unionwireless.com/content/images/thumbs/0000282_apple-iphone-8_550.png"
+        },
+        {
+            "DeviceName": "Samsung Galaxy S9 Active",
+            "Brand": "Samsung",
+            "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+            "dimensions": "-",
+            "weight": "-",
+            "type": "Super AMOLED capacitive touchscreen, 16M colors",
+            "size": "5.8 inches, 85.4 cm2",
+            "resolution": "1440 x 2960 pixels, 18.5:9 ratio (~568 ppi density)",
+            "colors": "Midnight Black, Coral Blue, Titanium Gray, Lilac Purple",
+            "price": "900€",
+            "img": "https://www.jazztel.com/jazztelMedia/mediaWeb/images/terminals/303_600x641_SAMSUNG_GALAX_S9.png"
+        },
+        {
+            "DeviceName": "Samsung Galaxy Note9",
+            "Brand": "Samsung",
+            "technology": "GSM / HSPA / LTE",
+            "dimensions": "-",
+            "weight": "-",
+            "type": "Super AMOLED capacitive touchscreen, 16M colors",
+            "size": "6.4 inches, 104.0 cm2",
+            "resolution": "1440 x 2960 pixels, 18.5:9 ratio (~514 ppi density)",
+            "colors": "Midnight Black, Coral Blue, Titanium Gray, Lilac Purple",
+            "price": "1200€",
+            "img": "https://thegoodguys.sirv.com/products/50061597/50061597_576431.PNG?scale.height=505&scale.width=773&canvas.height=505&canvas.width=773&canvas.opacity=0&format=png&png.optimize=true"
+        }
+    
+]
