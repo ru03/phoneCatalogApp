@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import './App.css';
 import Layout from './hoc/Layout/Layout';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import PhoneListContainer from './containers/PhoneListContainer/PhoneListContainer';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Toolbar />
-        <Layout />
+        <Layout>
+          <Switch>
+            <Route path="/" exact component={PhoneListContainer} />
+            <Redirect from="*" to="/" />
+          </Switch>
+        </Layout>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
     phones: [],
+    phone: [],
     loading: false
 };
 
@@ -27,6 +28,12 @@ const fetchPhonesFail = (state, action) => {
     return updateObject(state, { loading: false });
 };
 
+const getPhoneByID = (state, action) => {
+    return updateObject(state, {
+        phone: action.phone,
+    });
+}
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.FETCH_PHONES_START:
@@ -35,6 +42,8 @@ const reducer = (state = initialState, action) => {
             return fetchPhonesSuccess(state, action);
         case actionTypes.FETCH_PHONES_FAIL:
             return fetchPhonesFail(state, action);
+        case actionTypes.GET_PHONE_BY_ID:
+            return getPhoneByID(state, action);
         default:
             return state;
     }

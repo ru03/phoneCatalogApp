@@ -1,0 +1,12 @@
+.PhoneDetail {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+@media (max-width: 499px) {
+    .PhoneDetail {
+        margin: 25px;
+        flex-direction: column;
+    }
+}

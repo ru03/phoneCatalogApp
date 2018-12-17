@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-import PhoneListContainer from '../../containers/PhoneListContainer/PhoneListContainer';
+import Toolbar from './../../components/Navigation/Toolbar/Toolbar';
 import classes from './Layout.module.css';
 class Layout extends Component {
 
-    state = {};
-
     render() {
-
         return (
             <>
+                <Toolbar />
                 <main className={classes.Content}>
-                    <PhoneListContainer />
+                    {this.props.children}
                 </main>
             </>
         );
-
     }
-
 }
 
 export default Layout;

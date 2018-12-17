@@ -21,23 +21,32 @@ export const fetchPhonesStart = () => {
     };
 };
 
+export const getPhoneByID = (phone) => {
+    return {
+        type: actionTypes.GET_PHONE_BY_ID,
+        phone: phone
+    };
+};
+
 export const fetchPhones = () => {
     return dispatch => {
         dispatch(fetchPhonesStart());
         axios.get( '/phones' )
             .then( res => {
                 const fetchedPhones = [];
-                console.log(res.data);
-                for ( let key in res.data ) {
-                    fetchedPhones.push( {
-                        ...res.data[key],
-                        id: key
-                    } );
-                }
+                res.data.forEach(device => fetchedPhones.push(device));
                 dispatch(fetchPhonesSuccess(fetchedPhones));
             })
-            // .catch( err => {
-            //     dispatch(fetchPhonesFail(err));
-            // } );
+            .catch( err => {
+                dispatch(fetchPhonesFail(err));
+            } );
     };
 };
+
+export const getPhone = (id) => {
+    return (dispatch, getState) => {
+        const phones = getState().phones;
+        const phone = phones.filter(phone => phone.id === id);
+        dispatch(getPhoneByID(phone));
+    }
+}

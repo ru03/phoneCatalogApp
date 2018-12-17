@@ -1,1 +1,1 @@
-export { fetchPhones } from './phones';
+export { fetchPhones, getPhone } from './phones';
