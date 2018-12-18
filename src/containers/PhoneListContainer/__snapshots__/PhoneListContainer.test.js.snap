@@ -2,6 +2,7 @@
 
 exports[`PhoneListContainer test PhoneListContainer component should be displayed 1`] = `
 <PhoneListContainer
+  loading={false}
   onFetchPhones={[Function]}
   phone={Array []}
   phones={Array []}
