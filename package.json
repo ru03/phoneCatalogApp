@@ -1,6 +1,8 @@
 {
   "name": "phonecatalogapp",
   "version": "0.1.0",
+  "author": "Rubén López Mangas",
+  "repository": "https://github.com/ru03/phoneCatalogApp",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
