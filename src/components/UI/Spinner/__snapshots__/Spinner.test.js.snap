@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner test Spinner component should be displayed 1`] = `
+<spinner>
+  <backdrop>
+    <div
+      className="Backdrop"
+    />
+  </backdrop>
+  <div
+    className="spinner"
+  >
+    <div
+      className="doubleBounce1"
+    />
+    <div
+      className="doubleBounce2"
+    />
+  </div>
+</spinner>
+`;

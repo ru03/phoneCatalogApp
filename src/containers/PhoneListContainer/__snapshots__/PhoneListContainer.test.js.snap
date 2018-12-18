@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneListContainer test PhoneListContainer component should be displayed 1`] = `
+<PhoneListContainer
+  onFetchPhones={[Function]}
+  phone={Array []}
+  phones={Array []}
+>
+  <div
+    className="Items"
+  />
+  <div />
+</PhoneListContainer>
+`;

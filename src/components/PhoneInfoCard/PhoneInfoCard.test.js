@@ -1,9 +1,8 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import sinon from 'sinon';
 import PhoneInfoCard from './PhoneInfoCard';
 
-describe('Toolbar component test', () => {
+describe('PhoneInfoCard component test', () => {
     let phoneInfo;
 
     beforeEach(() => {
@@ -13,12 +12,19 @@ describe('Toolbar component test', () => {
     it('PhoneInfoCard should be displayed', () => {
         expect(phoneInfo).toMatchSnapshot();
     });
-    // TODO test click event
+
     it('PhoneInfoCard click event should be called', () => {
-        const handlerClick = sinon.spy();
+        const handlerClick = jest.fn();
         const phoneWithProps = mount(<PhoneInfoCard clicked={handlerClick}></PhoneInfoCard>)
-        console.log(phoneWithProps.prop());
+        phoneWithProps.props().clicked()
         expect(handlerClick).toBeCalled();
+    });
+    
+    it('PhoneInfoCard click event should return an id', () => {
+        const handlerClick = jest.fn(id => 1)
+        const phoneWithProps = mount(<PhoneInfoCard clicked={handlerClick}></PhoneInfoCard>)
+        phoneWithProps.props().clicked()
+        expect(handlerClick()).toEqual(1);
     });
 
     it('PhoneInfoCard props should be filled up', () => {

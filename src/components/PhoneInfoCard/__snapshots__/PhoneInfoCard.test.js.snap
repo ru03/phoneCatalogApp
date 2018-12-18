@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toolbar component test PhoneInfoCard should be displayed 1`] = `
+exports[`PhoneInfoCard component test PhoneInfoCard should be displayed 1`] = `
 <article
   className="Card"
 >

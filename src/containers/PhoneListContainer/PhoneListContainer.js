@@ -7,7 +7,7 @@ import PhoneDetailComponent from '../../components/PhoneDetailComponent/PhoneDet
 import classes from './PhoneListContainer.module.css';
 import Spinner from '../../components/UI/Spinner/Spinner';
 
-class PhoneListContainer extends Component {
+export class PhoneListContainer extends Component {
 
     componentDidMount() {
         this.props.onFetchPhones();
@@ -15,19 +15,18 @@ class PhoneListContainer extends Component {
 
     handlerClickDetailDevice = (id) => {
         this.props.onFilterPhone(id);
-        console.log(this.props.phone)
     }
 
     render() {
         let phonesCards = <Spinner />
         let phoneDetail = null;
         if (!this.props.loading) {
-            phonesCards = this.props.phones.map(details => <PhoneInfoCard key={details.id}
-                brand={details.Brand}
-                image={details.img}
-                model={details.model}
-                id={details.id}
-                clicked={this.handlerClickDetailDevice}></PhoneInfoCard>)
+                phonesCards = this.props.phones.map(details => <PhoneInfoCard key={details.id}
+                    brand={details.Brand}
+                    image={details.img}
+                    model={details.model}
+                    id={details.id}
+                    clicked={this.handlerClickDetailDevice}></PhoneInfoCard>)
         }
 
         if (this.props.phone.length > 0) {

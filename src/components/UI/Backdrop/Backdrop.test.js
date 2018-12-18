@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import Backdrop from './Backdrop';
 
-describe('Toolbar component test', () => {
-    it('test', () => {
-        
-    })
+describe('Backdrop test', () => {
+    it('Backdrop component should be displayed', () => {
+        const backdrop = shallow(<Backdrop></Backdrop>);
+
+        expect(backdrop).toMatchSnapshot();
+    });
 })
