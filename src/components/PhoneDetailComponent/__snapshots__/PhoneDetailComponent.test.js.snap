@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneDetail tests PhoneDetailComponent should be displayed 1`] = `
+<phoneDetailComponent
+  brand="apple"
+  colors="red"
+  image="image"
+  model="iphone8"
+  price="15"
+  screen="screen"
+>
+  <article
+    className="PhoneDetail"
+  >
+    <section>
+      <img
+        alt="iphone8"
+        src="image"
+      />
+    </section>
+    <section>
+      <h1
+        id="title"
+      >
+        apple
+      </h1>
+      <div>
+        <strong>
+          Model: 
+        </strong>
+        iphone8
+      </div>
+      <div>
+        <strong>
+          Colors: 
+        </strong>
+        red
+      </div>
+      <div>
+        <strong>
+          Screen Type: 
+        </strong>
+        screen
+      </div>
+      <div>
+        <strong>
+          Price: 
+        </strong>
+        15
+      </div>
+    </section>
+  </article>
+</phoneDetailComponent>
+`;

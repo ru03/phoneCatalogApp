@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar component test PhoneInfoCard should be displayed 1`] = `
+<article
+  className="Card"
+>
+  <header
+    className="Header"
+  >
+    <img />
+    <h1 />
+  </header>
+  <section
+    className="Section"
+  >
+    <p>
+      Brand: 
+    </p>
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Details
+    </button>
+  </section>
+</article>
+`;

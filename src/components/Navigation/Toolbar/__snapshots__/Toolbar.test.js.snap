@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar test Toolbar component should be displayed 1`] = `
+<header
+  className="Toolbar"
+>
+  <div>
+    Phone Catalog
+  </div>
+</header>
+`;

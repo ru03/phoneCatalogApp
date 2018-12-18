@@ -7,7 +7,7 @@ const phoneDetailComponent = (props) => (
             <img src={props.image} alt={props.model}></img>
         </section>
         <section>
-            <h1>{props.brand}</h1>
+            <h1 id="title">{props.brand}</h1>
             <div>
                 <strong>Model: </strong>{props.model}
             </div>
