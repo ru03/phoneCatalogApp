@@ -18,6 +18,10 @@ describe('PhoneListContainer test', () => {
         expect(phoneListContainer).toMatchSnapshot();
     });
 
+    it('PhoneListContainer component should display no items message without phones', () => {
+        expect(phoneListContainer.find('.Items').text()).toEqual('No items were found');
+    });
+
     it('PhoneListContainer component should display PhoneInfoCard component', () => {
         phoneListContainer.setProps({
             phones: [{

@@ -8,7 +8,9 @@ exports[`PhoneListContainer test PhoneListContainer component should be displaye
 >
   <div
     className="Items"
-  />
+  >
+    No items were found
+  </div>
   <div />
 </PhoneListContainer>
 `;

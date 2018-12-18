@@ -18,30 +18,34 @@ export class PhoneListContainer extends Component {
     }
 
     render() {
-        let phonesCards = <Spinner />
+        const NO_ITEMS = 'No items were found';
+        let spinner = <Spinner />;
         let phoneDetail = null;
+        let phonesCards = [];
         if (!this.props.loading) {
-                phonesCards = this.props.phones.map(details => <PhoneInfoCard key={details.id}
-                    brand={details.Brand}
-                    image={details.img}
-                    model={details.model}
-                    id={details.id}
-                    clicked={this.handlerClickDetailDevice}></PhoneInfoCard>)
+            phonesCards = this.props.phones.map(details => <PhoneInfoCard key={details.id}
+                brand={details.Brand}
+                image={details.img}
+                model={details.model}
+                id={details.id}
+                clicked={this.handlerClickDetailDevice}></PhoneInfoCard>)
+            spinner = null;
         }
 
         if (this.props.phone.length > 0) {
             phoneDetail = this.props.phone.map(phoneDetail => <PhoneDetailComponent key={phoneDetail.id}
-                                                                                    image={phoneDetail.img}
-                                                                                    model={phoneDetail.model}
-                                                                                    brand={phoneDetail.Brand}
-                                                                                    colors={phoneDetail.colors}
-                                                                                    price={phoneDetail.price}
-                                                                                    screen={phoneDetail.type} />)
+                image={phoneDetail.img}
+                model={phoneDetail.model}
+                brand={phoneDetail.Brand}
+                colors={phoneDetail.colors}
+                price={phoneDetail.price}
+                screen={phoneDetail.type} />)
         }
         return (
             <>
+                {spinner}
                 <div className={classes.Items}>
-                    {phonesCards}
+                    {phonesCards.length > 0 ? phonesCards : NO_ITEMS}
                 </div>
                 <div>
                     {phoneDetail}
